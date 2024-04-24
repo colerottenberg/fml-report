@@ -7,11 +7,12 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Final Report\\}
+\title{Enhancing ASL Letter Recognition with Machine Learning: A Project Exploring DenseNet and Data Augmentation Techniques\\}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Cole Rottenberg}
 \IEEEauthorblockA{\textit{Electrical and Computer Engineering} \\
@@ -22,7 +23,7 @@ colerottenberg@ufl.edu}}
 \maketitle
 
 \begin{abstract}
-A summary description of the contents of the report and your findings.
+This project explores machine learning methods for classifying American Sign Language (ASL) letters from a dataset of 1440 images. We evaluate several convolutional neural network (CNN) models, including DenseNet121, enhanced with data augmentation techniques to address the challenges posed by the limited dataset size. Our approach, focusing on the DenseNet121 without pretrained weights, significantly improved classification accuracy. The model achieved 95\% validation accuracy, demonstrating the effectiveness of tailored architectures and data augmentation in optimizing image classification tasks with limited data.
 \end{abstract}
 
 \section{Introduction}
@@ -65,7 +66,7 @@ The model architecture was the most important aspect of the project. The use of 
 \section{Conclusion}
 %Describe any conclusions or things you learned from the project. Your conclu- sions must follow from what you did. Do not copy something out of a paper or say something that has no experimental support in the Experiments section.
 
-From this project, I learned the importance of model architecture in the success of a model. The use of the DenseNet121 architecture was the most successful model for the dataset. The use of data augmentation layers within the model was also a key factor in the success of the model. The use of transfer learning was not as successful as I had hoped. The use of the DenseNet121 architecture with random weights was the best model for the dataset. The model was able to learn features from the images and the accuracy was $95\%$ on validation data and over $99.9\%$ on the training data. The success of the model was due the models ability to learn and pass feature-maps to each additional learning allowing for the model to combat the vanishing gradient problem. 
+From this project, I learned the importance of model architecture in the success of a model. The use of the DenseNet121 architecture was the most successful model for the dataset. The use of data augmentation layers within the model was also a key factor in the success of the model. The use of transfer learning was not as successful as I had hoped. The use of the DenseNet121 architecture with random weights was the best model for the dataset. The model was able to learn features from the images and the accuracy was $95\%$ on validation data and over $99.9\%$ on the training data. The success of the model was due the models ability to learn and pass feature-maps to each additional learning allowing for the model to combat the vanishing gradient problem. Additonally, I learned the importance of model architecture and the impact it can have on the success of a model. Just as hyperparameter tuning is important, the architecture of the model is equally as important. The use of the DenseNet121 architecture was the most successful model for the dataset. 
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
